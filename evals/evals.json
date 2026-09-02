@@ -1,0 +1,29 @@
+{
+ "skill_name": "simplified-technical-english",
+ "evals": [
+  {
+   "id": 0,
+   "name": "rewrite-research-methodology",
+   "prompt": "Rewrite methodology.md in Simplified Technical English. Keep every technical term of the field intact - I don't want 'census tract' or 'difference-in-differences' turned into something else. Tell me what you changed.",
+   "expected_output": "methodology rewritten into STE at a new path, a change report grouped by rule with rule numbers cited, domain terminology preserved, and the bundled checker run on the rewrite showing zero violations",
+   "files": ["inputs/methodology.md"],
+   "assertions": []
+  },
+  {
+   "id": 1,
+   "name": "write-procedure-in-ste",
+   "prompt": "Write the setup instructions for our data pipeline in STE. Steps: install Python 3.12 and the requirements file, put the raw ACS extracts in data/raw, set the CENSUS_API_KEY environment variable, run build.py, then check the output tables in results/. Warn people that running build.py overwrites anything already in results/.",
+   "expected_output": "procedural STE: imperative sentences, one instruction each, at most 20 words per sentence, and a correctly structured warning placed before the step it applies to",
+   "files": [],
+   "assertions": []
+  },
+  {
+   "id": 2,
+   "name": "ambiguous-target-must-ask",
+   "prompt": "Can you apply STE here?",
+   "expected_output": "the model asks which document to work on and lists the candidates it can see; it does not rewrite any file",
+   "files": ["inputs/ambiguous/quarterly_note.md", "inputs/ambiguous/data_readme.md", "inputs/ambiguous/appendix_draft.md"],
+   "assertions": []
+  }
+ ]
+}

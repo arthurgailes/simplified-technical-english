@@ -1,0 +1,478 @@
+# Technical nouns admitted under ASD-STE100 rules 1.5, 1.6, and 1.8.
+#
+# STE was written for aircraft maintenance manuals, so its dictionary has no
+# vocabulary for housing, finance, or statistics. Rule 1.6 permits words that
+# are not in the dictionary when they are technical nouns of your subject
+# field, and rule 1.8 says to take those from your company or industry
+# terminology. This file is that terminology list.
+#
+# One term per line, lowercase. Multi-word terms are matched as phrases.
+# Blank lines and lines starting with # are ignored.
+# Add to it rather than mangling a term into approved words: renaming a
+# technical noun breaks rule 1.11 (do not use different nouns for the same
+# item) and usually makes the text less accurate, not more readable.
+#
+# Each section below cites the categories of technical noun that rule 1.5
+# enumerates, so every term has a stated justification rather than resting on
+# "it sounds technical". The full list of 22 categories is in
+# references/rules/section-1-words.md. Where a term is subject-field
+# vocabulary the standard's categories do not enumerate, rule 1.8 covers it:
+# take technical nouns from your industry's terminology.
+#
+# Some terms here collide with a word the dictionary disallows in another
+# sense -- "permit" against LET (v), "spread" against APPLY (v). Those are kept
+# deliberately, and the checker reports each use as an advisory naming both
+# senses rather than silently allowing it. List them with:
+#   python scripts/ste_check.py --audit-domain-terms
+
+# --- Housing and mortgage finance (rule 1.5 categories 5, 15, 21) ---
+mortgage
+mortgages
+borrower
+borrowers
+lender
+lenders
+homebuyer
+homebuyers
+homeowner
+homeowners
+homeownership
+household
+households
+housing
+rent
+rents
+rental
+renter
+renters
+tenant
+tenants
+landlord
+landlords
+appraisal
+appraisals
+appraised
+foreclosure
+foreclosures
+refinance
+refinancing
+amortization
+equity
+escrow
+underwriting
+delinquency
+delinquencies
+default
+defaults
+loan
+loans
+loan-to-value
+debt-to-income
+credit score
+credit scores
+down payment
+down payments
+closing costs
+interest rate
+interest rates
+adjustable-rate
+fixed-rate
+conforming
+nonconforming
+subprime
+origination
+originations
+originator
+originators
+servicer
+servicers
+securitization
+affordability
+inventory
+listing
+listings
+permit
+permits
+permitting
+zoning
+rezoning
+upzoning
+density
+duplex
+duplexes
+triplex
+fourplex
+townhouse
+townhouses
+condominium
+condominiums
+multifamily
+single-family
+accessory dwelling unit
+land use
+lot size
+setback
+setbacks
+supply
+demand
+vacancy
+turnover
+migration
+gentrification
+displacement
+subsidy
+subsidies
+voucher
+vouchers
+
+# --- Geography and administrative units (rule 1.5 categories 8, 11) ---
+census tract
+census tracts
+tract
+tracts
+block group
+block groups
+county
+counties
+metropolitan area
+metropolitan areas
+metro
+metros
+municipality
+municipalities
+jurisdiction
+jurisdictions
+neighborhood
+neighborhoods
+zip code
+zip codes
+state
+states
+region
+regions
+urban
+suburban
+rural
+exurban
+
+# --- Statistics and research methods (rule 1.5 category 7) ---
+data
+dataset
+datasets
+sample
+samples
+sampling
+population
+observation
+observations
+variable
+variables
+covariate
+covariates
+regression
+regressions
+coefficient
+coefficients
+estimate
+estimates
+estimator
+estimation
+model
+models
+specification
+specifications
+elasticity
+elasticities
+correlation
+causation
+causal
+endogeneity
+instrument
+instruments
+instrumental
+difference-in-differences
+fixed effects
+random effects
+robustness
+standard error
+standard errors
+confidence interval
+confidence intervals
+statistical
+statistically
+significance
+significant
+median
+mean
+average
+percentile
+percentiles
+quartile
+quartiles
+quantile
+distribution
+distributions
+weighted
+unweighted
+index
+indices
+indexes
+time series
+panel
+cross-section
+cohort
+cohorts
+baseline
+counterfactual
+treatment
+control group
+outlier
+outliers
+bias
+biased
+unbiased
+imputation
+imputed
+survey
+surveys
+respondent
+respondents
+questionnaire
+methodology
+metric
+metrics
+indicator
+indicators
+benchmark
+benchmarks
+trend
+trends
+growth rate
+share
+shares
+ratio
+ratios
+
+# --- Policy and institutions (rule 1.5 categories 11, 21) ---
+policy
+policies
+policymaker
+policymakers
+regulation
+regulations
+regulatory
+legislation
+statute
+statutes
+ordinance
+ordinances
+program
+programs
+agency
+agencies
+federal
+municipal
+appropriation
+appropriations
+eligibility
+compliance
+enforcement
+stakeholder
+stakeholders
+constituent
+constituents
+
+# --- Numbers, units of measurement, and time (rule 1.5 category 9) ---
+percent
+percentage
+percentage point
+percentage points
+year
+years
+month
+months
+quarter
+quarters
+decade
+decades
+dollar
+dollars
+measurement
+measurements
+result
+results
+finding
+findings
+analysis
+analyses
+
+# --- Documents and software (rule 1.5 categories 15, 19) ---
+report
+reports
+appendix
+appendices
+figure
+figures
+table
+tables
+chart
+charts
+footnote
+footnotes
+citation
+citations
+repository
+script
+scripts
+setup
+step
+steps
+item
+items
+command
+commands
+python
+pipeline
+pipelines
+environment
+environment variable
+environment variables
+api
+api key
+api keys
+key
+keys
+extract
+extracts
+raw
+requirements
+build
+py
+txt
+census
+acs
+spreadsheet
+spreadsheets
+database
+databases
+file
+files
+directory
+directories
+column
+columns
+row
+rows
+field
+fields
+record
+records
+query
+queries
+parameter
+parameters
+argument
+arguments
+function
+functions
+package
+packages
+library
+libraries
+version
+versions
+
+# --- Research methodology (rule 1.5 category 7) ---
+land-use
+analytic
+study
+studies
+assumption
+assumptions
+parallel trends
+event study
+event studies
+pre-period
+post-period
+differential
+spatial
+cluster
+clustered
+clustering
+error term
+robustness check
+robustness checks
+inverse-probability
+weighting
+weight
+weights
+selection
+stringency
+reform
+reforms
+housing stock
+stock
+residential
+building permit
+building permits
+upzone
+upzoned
+
+# --- Added for mortgage rate outlook writing ---
+rate
+rates
+mortgage rate
+mortgage rates
+fixed-rate mortgage
+spread
+spreads
+treasury
+prepayment
+prepayments
+price
+prices
+home price
+home prices
+investor
+investors
+pandemic
+
+fixed
+fixed rate
+30-year fixed rate
+10-year treasury
+
+# --- Added for the PUMA / marriage-affordability memo (rules 1.5 cat. 7, 8, 11; 1.8; 8.6) ---
+# Spatial-econometrics and study-design nouns (rule 1.5 category 7)
+gradient
+gradients
+origin
+origins
+decay
+spatial decay
+reduced form
+counterfactual
+synthetic control
+matched-comp
+statistical power
+falsification
+aggregation
+# Geography building blocks and derived areas (rule 1.5 categories 8, 11)
+commuting zone
+commuting zones
+rest-of-metro
+rest-of-state
+metro-plus-rest-of-state
+metro-only
+non-metro
+sub-metro
+# Census / ACS identifiers, matched exactly by their capitalization (rule 8.6)
+PUMA
+PUMAs
+MIGPUMA
+CBSA
+CBSAs
+CZ
+CZs
+ACS
+AVM

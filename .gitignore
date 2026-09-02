@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.pixi/
+
+# ASD-STE100 is copyright ASD. The source PDF and every file generated from it
+# are excluded from this repository. Run `python scripts/init.py` after you add
+# your own licensed copy of the PDF (free from https://asd-ste100.org).
+references/ASD-STE100_ISSUE9.pdf
+assets/ste_dictionary.json
+references/dictionary.md
+references/dictionary-guide.md
+references/rules/
