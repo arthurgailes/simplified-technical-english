@@ -94,5 +94,24 @@ behavior should stay consistent with what `SKILL.md` promises.
 ## Copyright constraint
 
 ASD-STE100 is copyright ASD. The PDF and everything extracted from it
-(`references/`, `assets/ste_dictionary.json`) are a private working copy —
-do not publish or redistribute this skill or its extracted data.
+(`references/`, `assets/ste_dictionary.json`) must never be published or
+redistributed. The tooling (scripts, `SKILL.md`, `CLAUDE.md`, domain terms) is
+publishable; the ASD-derived data is not.
+
+## Two repositories
+
+This working copy tracks the **private** repo (`origin`), which holds everything
+including the copyright ASD data. The **public** repo ships only the tooling and
+tells users to bring their own copy of the standard.
+
+Publish to both with one command:
+
+```bash
+scripts/publish.sh "commit message"
+```
+
+It commits and pushes to the private repo, then mirrors an explicit whitelist
+(scripts, `SKILL.md`, `CLAUDE.md`, domain terms, evals) into a local clone of
+the public repo under `.public-mirror/` and pushes that. The ASD data is never
+copied, and the public repo's own README (written in STE) and `.gitignore` are
+left untouched.
